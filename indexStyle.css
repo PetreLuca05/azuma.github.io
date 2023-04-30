@@ -1,0 +1,688 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+
+    text-decoration: none;
+    color: black;
+    list-style: none;
+
+    background-position: center;
+    background-size: cover;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    overflow-x:hidden;
+}
+
+
+.bg{
+    background-image: linear-gradient(-45deg, rgba(76, 24, 87, .9), rgba(0, 140, 255, .8)), url("img/2up.jpg");
+    filter: blur(15px);
+    width: 100%;
+    height: 100%;
+
+    transform: scale(1.1);
+
+    position: fixed;
+
+    z-index: -1000;
+}
+
+.phnav{
+
+    display: none;
+    width: 20vw;
+    height: 15vw;
+
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom-right-radius: 50%;
+
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+}
+
+.phnav i{
+    color: white;
+    font-size: 30px;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+
+    position: fixed;
+    bottom: 15px;
+    z-index: 10000;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: rgba(255, 0, 0, 0);
+}
+
+nav ul{
+    width: 75%;
+    height: 50px;
+
+    border-radius: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: rgba(0, 0, 0, .5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+nav ul li{
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+
+    gap: 35px;
+}
+
+nav ul li a{
+    color: white;
+    text-transform: uppercase;
+}
+
+nav ul li:nth-child(1) a:nth-child(1){
+    font-family: "Alkatra";
+    font-family: "Shojumaru";
+    font-size: 25px;
+    font-weight: 500;
+
+    display: none;
+
+    margin-left: 35px;
+    transform: translateY(calc(100% / 25));
+    transform: translateY(calc(100% / 75));
+}
+
+nav ul li:nth-child(1) a:nth-child(2){
+    margin-left: 35px;
+}
+
+nav ul li:nth-child(2){
+    height: 80%;
+    width: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    margin-right: 5px;
+
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, .5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+nav ul li:nth-child(2) a{
+    
+}
+
+nav ul li:nth-child(2) i{
+    color: white;
+}
+
+nav ul li:nth-child(3){
+    display: none;
+}
+
+nav ul li:nth-child(3) p{
+    color: transparent;
+}
+
+.holder{
+    width: 100%;
+    height: 100vh;
+
+
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main div h1, .main div h2{
+    color: white;
+    font-size: 250px;
+    font-size: 10vw;
+}
+
+.main div h1{
+    font-family: "Shojumaru";
+    text-transform: uppercase;
+
+    font-size: 275px;
+    font-size: 15vw;
+
+    transform: translateY(calc(1 * .3vw));
+
+    text-shadow: 0px 0px 5px white;
+}
+
+.main div h2{
+    font-weight: 200;
+    text-shadow: 0px 0px 5px white;
+
+    display: none;
+}
+
+.main p{
+    color: white;
+    font-size: 30px;
+    font-weight: 200;
+
+    transform: translateY(calc(-2vw));
+}
+
+.gallery{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.gallery ul{
+    width: 99%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding-top: 10px;
+}
+
+.gallery ul li{
+    color: white;
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+.gallery ul li:nth-child(1){
+    font-weight: 500;
+}
+
+.gallery ul li:nth-child(2){
+    font-weight: 200;
+}
+
+.gallery ul li a{
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 15px;
+}
+
+.gallery section{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.gallery section div{
+    height: 100%
+}
+
+.next, .prev{
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 100%;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    box-sizing: border-box;
+
+    transition: .1s;
+}
+
+.next i, .prev i{
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.75);
+
+}
+
+.next:hover{
+    border: 1px solid rgba(255, 255, 255, .75);
+}
+
+.prev:hover{
+    border: 1px solid rgba(255, 255, 255, .75);
+}
+
+.next{
+
+}
+
+.prev{
+
+}
+
+.galleryshow{
+    width: 650%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+
+    scroll-snap-type: x mandatory;
+}
+
+.galleryshow section{
+    width: 100%;
+    height: 100%;
+
+    scroll-snap-align: start;
+}
+
+.galleryshow section:nth-child(1){
+    background-image: url("img/1.PNG");
+}
+
+.galleryshow section:nth-child(2){
+    background-image: url("img/2up.jpg");
+}
+
+.galleryshow section:nth-child(3){
+    background-image: url("img/dog.jpg");
+}
+
+.location{
+    width: 100%;
+    height: 100vh;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.location ul{
+    width: 99%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding-top: 10px;
+}
+
+.location ul li{
+    color: white;
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+.location ul li:nth-child(1){
+    font-weight: 500;
+}
+
+.location ul li:nth-child(2){
+    font-weight: 200;
+}
+
+.location ul li a{
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 15px;
+}
+
+.location iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.about-us{
+    width: 100%;
+    height: min-content;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.about-us ul{
+    width: 99%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding-top: 10px;
+}
+
+.about-us ul li{
+    color: white;
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+.about-us ul li:nth-child(1){
+    font-weight: 500;
+}
+
+.about-us ul li:nth-child(2){
+    font-weight: 200;
+}
+
+.about-us ul li a{
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 15px;
+}
+
+.about-us section{
+    width: 100%;
+    height: 95%;
+
+    padding: 150px 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 25px;
+
+    background-color: rgba(0, 0, 0, .25);
+}
+
+.about-us section div{
+
+    height: max-content;
+    width: 30%;
+
+    background-image: linear-gradient(-45deg, rgba(63, 130, 255, 0),rgb(40, 82, 160),rgba(63, 130, 255, 0.479));
+    background-position-x: 0px;
+    background-size: 150%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 15px;
+
+    margin: 25px;
+
+    transition: .65s;
+}
+
+.about-us section div:hover{
+    background-position-x: -150px;
+}
+
+.about-us section div i{
+    color: white;
+
+    font-size: 150px;
+
+    padding-top: 50px;
+
+    padding-bottom: 25px;
+
+    transition: .4s;
+}
+
+.about-us section div:hover i{
+    text-shadow: 0px 0px 15px white;
+}
+
+.about-us section div p{
+    color: white;
+    font-size: 25px;
+
+    text-align: center;
+
+    padding: 25px;
+
+    padding-bottom: 100px;
+}
+
+footer{
+    width: 100%;
+    height: 25px;
+
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+
+    font-weight: 200;
+}
+
+@media (max-width: 500px){
+    nav{
+        width: 100%;
+        bottom: 10px;
+    }
+
+    nav ul{
+        width: 95%;
+        border-radius: 10px;
+        overflow-x: scroll;
+
+        background-color: rgba(0, 0, 0, 0.65);
+    }
+
+    nav ul li{
+    }
+
+    nav ul li a{
+        width: max-content;
+    }
+
+    nav ul li:nth-child(2){
+        width: max-content;
+    
+        border-radius: 10px;
+
+        margin-left: 25px;
+    }
+
+    nav ul li:nth-child(2) a{
+        width: max-content;
+        padding: 0px 20px;
+    }
+
+    nav ul li:nth-child(3){
+        width: 100px;
+        height: 100%;
+
+        display: inline;
+        
+        margin-left: -5px;
+    }
+
+    nav ul li:nth-child(3) p{
+        color: transparent;
+    }
+
+    .gallery ul{
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .next{
+        display: none;
+    }
+    
+    .prev{
+        display: none;
+    }
+
+    .gallery ul li:nth-child(1){
+        font-weight: 500;
+        font-size: 100px;
+        margin-top: 10px;
+    }
+    
+    .gallery ul li:nth-child(2){
+        font-weight: 200;
+        margin-top: -30px;
+    }
+
+    .gallery ul li:nth-child(3){
+        margin-top: -50px;
+    }
+
+    .main div h1, .main div h2{
+        font-size: 13vw;
+    }
+    
+    .main div h1{
+        font-size: 12vw;
+        text-shadow: none;
+
+        font-size: 18vw;
+        text-shadow: 0px 0px 2px white;
+    }
+
+    .main div h2{
+        font-size: 12vw;
+        margin-top: 3px;
+
+        display: none;
+    }
+
+    .main p{
+        font-size: 6vw;
+        margin-top: -8px;
+    }
+
+    .location ul{
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .location ul li:nth-child(1){
+        font-weight: 500;
+        font-size: 70px;
+        margin-top: 10px;
+    }
+    
+    .location ul li:nth-child(2){
+        font-weight: 200;
+        font-size: 50px;
+        margin-top: -20px;
+    }
+
+    .location ul li:nth-child(3){
+        margin-top: -40px;
+    }
+
+    .about-us{
+        width: 100%;
+        height: min-content;
+    }
+
+    .about-us ul{
+        width: 90%;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    
+        gap: 5px;
+    
+        padding-top: 10px;
+    }
+
+    .about-us ul li:nth-child(3){
+        margin-top: -65px;
+    }
+
+    .about-us section{
+        width: 100%;
+        height: 95%;
+
+        padding: 10px 0px;
+        gap: 0px;
+    
+        flex-direction: column;
+    }
+    
+    .about-us section div{
+        height: max-content;
+        width: 90%;
+    
+        background-image: linear-gradient(-45deg, rgba(63, 130, 255, 0),rgb(40, 82, 160),rgba(63, 130, 255, 0.479));
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        border-radius: 15px;
+    
+        margin: 25px;
+    }
+
+    .about-us section div i{
+        font-size: 100px;
+
+        padding-top: 25px;
+        padding-bottom: 0px;
+    }
+    
+    .about-us section div p{
+        font-size: 20px;
+    
+        padding: 15px;
+    }
+}
