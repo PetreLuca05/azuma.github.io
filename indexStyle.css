@@ -482,6 +482,8 @@ nav ul li:nth-child(3) p{
 .au-title li a{
     color: rgba(255, 255, 255, 0.75);
     font-size: 15px;
+
+    display: none;
 }
 
 .au-content{
@@ -609,6 +611,8 @@ nav ul li:nth-child(3) p{
 .br-title li a{
     color: rgba(255, 255, 255, 0.75);
     font-size: 15px;
+
+    display: none;
 }
 
 .br-interzis-hld{
@@ -1004,17 +1008,16 @@ footer p{
     .beach-rules .br-interzis ul{
         list-style:decimal;
 
-        width: 94%;
-        padding-left: 0px;
+        width: 85%;
+        padding-left: 30px;
         padding-top: 0px;
         padding-bottom: 25px;
     }
     
     .beach-rules .br-interzis ul li{
-        list-style:none;
-        text-align: center;
+        text-align: left;
 
-        text-transform: capitalize;
+        text-transform: uppercase;
     
         font-size: 20px;
     
