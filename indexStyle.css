@@ -31,6 +31,28 @@ body{
     z-index: -1000;
 }
 
+.insta-holder{
+    position: fixed;
+    left: 0;
+    padding: 15px; 
+
+    display: flex;
+    align-items: center;
+
+    display: none;
+}
+
+.insta-holder i{
+    color: rgba(255, 255, 255, 0.25);
+    font-size: 25px;
+}
+
+.insta-holder p{
+    color: rgba(255, 255, 255, 0.25);
+    text-transform: uppercase;
+    padding-left: 5px;
+}
+
 .phnav{
 
     display: none;
@@ -97,21 +119,21 @@ nav ul li a{
     text-transform: uppercase;
 }
 
-nav ul li:nth-child(1) a:nth-child(1){
-    font-family: "Alkatra";
-    font-family: "Shojumaru";
+nav ul li i {
+    color: white;
     font-size: 25px;
-    font-weight: 500;
 
-    display: none;
-
-    margin-left: 35px;
+    margin-left: 20px;
     transform: translateY(calc(100% / 25));
     transform: translateY(calc(100% / 75));
 }
 
 nav ul li:nth-child(1) a:nth-child(2){
-    margin-left: 35px;
+    display: none;
+}
+
+nav ul li:nth-child(1) a:nth-child(3){
+    margin-left: -10px;
 }
 
 nav ul li:nth-child(2){
@@ -207,8 +229,8 @@ nav ul li:nth-child(3) p{
 
 .main section{
     background-image: url("img/logo.png");
-    width: 100%;
-    height: 1000px;
+    width: 80vw;
+    height: 80%;
 
     background-repeat: no-repeat;
     background-size: contain;
@@ -405,11 +427,15 @@ nav ul li:nth-child(3) p{
     text-transform: uppercase;
 }
 
-.location ul li:nth-child(1){
+.location ul li p{
+    color: white;
+}
+
+.location ul li:nth-child(1) p{
     font-weight: 500;
 }
 
-.location ul li:nth-child(2){
+.location ul li:nth-child(2) p{
     font-weight: 200;
 }
 
@@ -710,7 +736,7 @@ footer p{
 }
 
 
-@media (max-width: 2000px){
+@media (max-width: 1500px){
 
     .beach-rules{
         height: min-content;
@@ -757,11 +783,35 @@ footer p{
 
         text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     }
-    
+
+    .about-us{
+        height: min-content;
+    }
+
+    .au-content{
+        height: min-content;
+        padding-bottom: 25px;
+    }
+
+    .au-content .au-casute li h1{
+        color: white;
+        font-size: 35px;
+        padding-top: 5px;
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+    .au-content .au-casute li p{
+        color: rgba(255, 255, 255, 0.55);
+        font-size: 20px;
+        width: 95%;
+        font-weight: 300;
+        text-align: center;
+    }
 }
 
 
-@media (max-width: 700px){
+@media (max-width: 600px){
     nav{
         width: 100%;
         bottom: 10px;
@@ -823,12 +873,13 @@ footer p{
 
     .gallery ul li:nth-child(1){
         font-weight: 500;
-        font-size: 100px;
+        font-size: 30vw;
         margin-top: 10px;
     }
     
     .gallery ul li:nth-child(2){
         font-weight: 200;
+        font-size: 20vw;
         margin-top: -30px;
     }
 
@@ -860,6 +911,11 @@ footer p{
         margin-top: -8px;
     }
 
+    .main section{
+        width: 90vw;
+        height: 80%;
+    }
+
     .location ul{
         flex-direction: column;
         gap: 0px;
@@ -867,13 +923,13 @@ footer p{
 
     .location ul li:nth-child(1){
         font-weight: 500;
-        font-size: 70px;
+        font-size: 20vw;
         margin-top: 10px;
     }
     
     .location ul li:nth-child(2){
         font-weight: 200;
-        font-size: 50px;
+        font-size: 15vw;
         margin-top: -20px;
     }
 
@@ -972,13 +1028,13 @@ footer p{
 
     .beach-rules .br-title li:nth-child(1){
         font-weight: 500;
-        font-size: 90px;
+        font-size: 25vw;
         margin-top: 10px;
     }
     
     .beach-rules .br-title li:nth-child(2){
         font-weight: 200;
-        font-size: 65px;
+        font-size: 20vw;
         margin-top: -30px;
     }
 
@@ -990,6 +1046,8 @@ footer p{
     .beach-rules .br-title-2 p{
         color: rgba(255, 255, 255, 0.75);
         font-size: 25px;
+
+        text-align: center;
     
         font-weight: 200;
     }
