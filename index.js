@@ -11,3 +11,5 @@ btnL.addEventListener("click", function( e ) {
 btnR.addEventListener("click", function( e ) {
     gallery.scrollLeft -= 1000;
 }); 
+
+location.href = "https://t.bkit.co/l_647ccaaa0f553";

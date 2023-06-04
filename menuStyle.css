@@ -6,18 +6,11 @@
     text-decoration: none;
     color: black;
     list-style: none;
-
-    background-position: center;
-    background-size: cover;
 }
 
 body{
     display: flex;
     justify-content: center;
-    overflow-x:hidden;
-
-
-    overflow-y: hidden;
 }
 
 .bg{
@@ -76,16 +69,7 @@ nav ul li a{
 }
 
 nav ul li:nth-child(1) a:nth-child(1){
-    font-family: "Alkatra";
-    font-family: "Shojumaru";
-    font-size: 25px;
-    font-weight: 500;
-
     display: none;
-
-    margin-left: 35px;
-    transform: translateY(calc(100% / 25));
-    transform: translateY(calc(100% / 75));
 }
 
 nav ul li:nth-child(1) a:nth-child(2){
@@ -108,25 +92,9 @@ nav ul li:nth-child(2){
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-nav ul li:nth-child(2) a{
-    
-}
-
-nav ul li:nth-child(2) i{
-    color: white;
-}
-
-nav ul li:nth-child(3){
-    display: none;
-}
-
-nav ul li:nth-child(3) p{
-    color: transparent;
-}
-
-.menu{
+.cs{
     width: 100%;
-    height: 100svh;
+    height: 100vh;
 
     background: rgba(0, 0, 0, 0.75);
 
@@ -135,19 +103,43 @@ nav ul li:nth-child(3) p{
     align-items: center;
 
     flex-direction: column;
+
+    position: fixed;
+
+    display: none;
 }
 
-.menu h1{
+.cs h1{
     color: rgba(255, 255, 255, 0.5);
     text-transform: uppercase;
 
     font-size: 7vw;
 }
-.menu h2{
+.cs h2{
     color: rgba(255, 255, 255, 0.25);
     text-transform: uppercase;
 
     font-size: 4vw;
+}
+
+.menu{
+    width: 100%;
+    height: 100svh;
+}
+
+.menu ul{
+    padding: 25px;
+    background-color: rgba(102, 51, 153, 0);
+}
+ 
+
+.menu ul li h1{
+    color: white;
+    font-weight: 300;
+}
+
+.menu ul li h2{
+    color: white;
 }
 
 @media (max-width: 500px){
@@ -192,5 +184,11 @@ nav ul li:nth-child(3) p{
         color: transparent;
     }
 
-   
+    .menu ul li h1{
+        font-size: 20px;
+    }
+    
+    .menu ul li h2{
+        font-size: 20px;
+    }
 }
