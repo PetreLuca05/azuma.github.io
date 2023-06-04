@@ -106,7 +106,6 @@ nav ul li:nth-child(2){
 
     position: fixed;
 
-    display: none;
 }
 
 .cs h1{
@@ -125,6 +124,8 @@ nav ul li:nth-child(2){
 .menu{
     width: 100%;
     height: 100svh;
+
+    display: none;
 }
 
 .menu ul{
