@@ -229,8 +229,8 @@ nav ul li:nth-child(3) p{
 
 .main section{
     background-image: url("img/logo.png");
-    width: 80vw;
-    height: 80%;
+    width: 70vw;
+    height: 60%;
 
     background-repeat: no-repeat;
     background-size: contain;
