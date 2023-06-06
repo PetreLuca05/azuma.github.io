@@ -138,7 +138,7 @@ nav ul li:nth-child(1) a:nth-child(3){
 
 nav ul li:nth-child(2){
     height: 80%;
-    width: 150px;
+    padding: 0px 25px;
 
     display: flex;
     align-items: center;
@@ -784,6 +784,10 @@ footer h1{
     nav{
         display: none;
     }
+
+    .bg{
+        display: none;
+    }
 }
 
 
@@ -893,7 +897,7 @@ footer h1{
 
     nav ul li:nth-child(2) a{
         width: max-content;
-        padding: 0px 20px;
+        padding: 0px 0px;
     }
 
     nav ul li:nth-child(3){
@@ -924,7 +928,7 @@ footer h1{
 
     .gallery ul li:nth-child(1){
         font-weight: 500;
-        font-size: 30vw;
+        font-size: 23vw;
         margin-top: 10px;
     }
 
@@ -935,7 +939,7 @@ footer h1{
     .gallery ul li:nth-child(2){
         font-weight: 200;
         font-size: 20vw;
-        margin-top: -30px;
+        margin-top: -25px;
     }
 
     .gallery ul li:nth-child(3){
@@ -978,13 +982,13 @@ footer h1{
 
     .location ul li:nth-child(1){
         font-weight: 500;
-        font-size: 20vw;
+        font-size: 23vw;
         margin-top: 10px;
     }
     
     .location ul li:nth-child(2){
         font-weight: 200;
-        font-size: 15vw;
+        font-size: 16vw;
         margin-top: -20px;
     }
 
@@ -1008,6 +1012,16 @@ footer h1{
         gap: 5px;
     
         padding-top: 10px;
+    }
+
+    .au-title li:nth-child(1){
+        margin-top: 0px;
+        font-size: 25vw;
+    }
+
+    .au-title li:nth-child(2){
+        font-size: 18vw;
+        margin-top: -30px;
     }
 
     .au-title li:nth-child(3){
@@ -1083,14 +1097,14 @@ footer h1{
 
     .beach-rules .br-title li:nth-child(1){
         font-weight: 500;
-        font-size: 25vw;
+        font-size: 21vw;
         margin-top: 10px;
     }
     
     .beach-rules .br-title li:nth-child(2){
         font-weight: 200;
-        font-size: 20vw;
-        margin-top: -30px;
+        font-size: 19vw;
+        margin-top: -25px;
     }
 
     .beach-rules .br-title li:nth-child(3){
