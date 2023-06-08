@@ -939,7 +939,7 @@ footer h1{
     .gallery ul li:nth-child(2){
         font-weight: 200;
         font-size: 20vw;
-        margin-top: -25px;
+        margin-top: -15px;
     }
 
     .gallery ul li:nth-child(3){
@@ -989,7 +989,7 @@ footer h1{
     .location ul li:nth-child(2){
         font-weight: 200;
         font-size: 16vw;
-        margin-top: -20px;
+        margin-top: -12px;
     }
 
     .location ul li:nth-child(3){
