@@ -1,12 +1,8 @@
-const cocktailBtn = document.querySelector(".cocktail");
-const cocktailBtnBack = document.querySelector(".wheel-back");
+const btnBanner = document.querySelector(".bhide");
+const banner = document.querySelector(".banner");
 
-const wheelPanel = document.querySelector(".wheel");
+btnBanner.addEventListener("click", function( e ) {
+    banner.setAttribute('id', 'hide');
+});
 
-cocktailBtn.addEventListener("click", function( e ) {
-    //wheelPanel.setAttribute('id', '');
-}); 
 
-cocktailBtnBack.addEventListener("click", function( e ) {
-    wheelPanel.setAttribute('id', 'hide');
-}); 
