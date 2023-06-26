@@ -51,7 +51,7 @@ nav ul{
     justify-content: space-between;
 
     background-color: rgba(0, 0, 0, .5);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.35);
 }
 
 nav ul li{
@@ -91,7 +91,7 @@ nav ul li:nth-child(2){
 
     border-radius: 100px;
     background-color: rgba(0, 0, 0, .5);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.35);
 }
 
 .cs{
@@ -159,9 +159,21 @@ nav ul li:nth-child(2){
     text-transform: uppercase;
 
     padding-top: 30px;
-    margin-left: -5px;
+    margin-left: -15px;
 
     font-size: 3vw;
+}
+
+.menu ul p{
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+
+    margin-top: -20px;
+    margin-left: -15px;
+
+    padding-bottom: 15px;
+
+    font-size: 2vw;
 }
 
 .menu ul h1:nth-child(1){
@@ -174,7 +186,13 @@ nav ul li:nth-child(2){
 }
 
 .menu ul li h3{
+    color: rgba(255, 255, 255, 0.45);
+    font-weight: 300;
+}
+
+.menu ul li h4{
     color: white;
+    text-transform: uppercase;
 }
 
 .turn-phone{
@@ -297,8 +315,13 @@ nav ul li:nth-child(2){
     }
     
     .menu ul h1{
-    
-        font-size: 13vw;
+        font-size: 10vw;
+    }
+
+    .menu ul p{
+        font-size: 8vw;
+        margin-top: -10px;
+        padding: 0px;
     }
 
     .menu ul{
