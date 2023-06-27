@@ -142,6 +142,8 @@ nav ul{
     align-items: center;
     justify-content: space-between;
 
+    -webkit-backdrop-filter: blur(5px);
+
     background-color: rgba(0, 0, 0, .5);
     border: 1px solid rgba(255, 255, 255, 0.35);
 }
@@ -318,6 +320,44 @@ nav ul li:nth-child(2){
 
 #hide{
     display: none;
+}
+
+.poza-1{
+    background-image: url("img/guvernromania.PNG");
+    background-size: contain;
+    height:450px;
+}
+
+.poza-2{
+    background-image: url("img/infocons.PNG");
+    background-size: contain;
+    height:450px;
+}
+
+.vn{
+    border-bottom: none;
+    margin-top: 50px;
+    border-top: 1px solid rgba(255, 255, 255, .5);
+}
+
+.vn a{
+    width: 100%;
+
+    color: white;
+    text-transform: uppercase;
+
+    font-weight: 400;
+    font-size: 20px;
+
+    text-align: center;
+}
+
+.btngap{
+    padding-bottom: 100px;
+}
+
+.btngap p{
+    color: transparent;
 }
 
 @media (orientation: landscape) and (max-width: 1300px){
