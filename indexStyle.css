@@ -483,7 +483,31 @@ nav ul li:nth-child(3) p{
 }
 
 .galleryshow section:nth-child(9){
-    background-image: url("https://t.bkit.co/i_647ccede2f35c.jpg");
+    background-image: url("img/plj/9.jpg");
+}
+
+.galleryshow section:nth-child(10){
+    background-image: url("img/plj/10.png");
+}
+
+.galleryshow section:nth-child(11){
+    background-image: url("img/plj/11.png");
+}
+
+.galleryshow section:nth-child(12){
+    background-image: url("img/plj/12.png");
+}
+
+.galleryshow section:nth-child(13){
+    background-image: url("img/plj/13.png");
+}
+
+.galleryshow section:nth-child(14){
+    background-image: url("img/plj/14.png");
+}
+
+.galleryshow section:nth-child(15){
+    background-image: url("img/plj/15.png");
 }
 
 
